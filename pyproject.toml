@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ezextract"
+version = "0.1.1"
+description = "A simple, human-friendly web scraper wrapper using httpx, BeautifulSoup, and Playwright."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    { name = "E4crypt3d" }
+]
+keywords = ["scraper", "webscraping", "httpx", "playwright", "crawler", "data-extraction"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "httpx>=0.24.0",
+    "beautifulsoup4>=4.12.0",
+    "playwright>=1.35.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/E4crypt3d/ezextract"
+"Bug Tracker" = "https://github.com/E4crypt3d/ezextract/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ezextract"]
